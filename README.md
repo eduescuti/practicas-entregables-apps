@@ -16,10 +16,8 @@ TypeScript + expo-router. Resuelve las dos tareas de la práctica.
 ## Cómo correrlo
 
 ```bash
-npm install          # instalar dependencias
-npm start            # levanta el QR para abrir en el celular con Expo Go
-npm run android      # abrir en un emulador/dispositivo Android
-npm run typecheck    # chequeo de tipos (tsc --noEmit)
+npx install
+npx expo start
 ```
 
 ## Estructura
