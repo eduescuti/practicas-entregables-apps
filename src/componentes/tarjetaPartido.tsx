@@ -3,17 +3,12 @@ import { Pressable, StyleSheet, Text, View } from 'react-native';
 
 import { colores, espaciado, radios } from '../tema/colores';
 
-/** Contenido de la tarjeta: llega entero por props. */
 type PropsTarjetaPartido = {
   titulo: string;
   detalle: string;
 };
 
-/**
- * Tarea 1 — Tarjeta interactiva.
- * Recibe su texto por props y guarda con useState si está "anotada".
- * Al tocarla cambia el color de fondo y el color del texto.
- */
+
 export default function TarjetaPartido({ titulo, detalle }: PropsTarjetaPartido) {
   const [anotado, setAnotado] = useState(false);
 
@@ -28,7 +23,7 @@ export default function TarjetaPartido({ titulo, detalle }: PropsTarjetaPartido)
         pressed && estilos.tarjetaPresionada,
       ]}
     >
-      {/* Flexbox centra el bloque de texto en ambos ejes dentro de la tarjeta. */}
+
       <View style={estilos.contenido}>
         <Text style={[estilos.titulo, anotado ? estilos.textoAnotado : estilos.textoLibre]}>
           {titulo}
@@ -51,7 +46,6 @@ const estilos = StyleSheet.create({
     borderWidth: 1,
     marginBottom: espaciado.md,
     paddingHorizontal: espaciado.md,
-    // Centrado absoluto en los dos ejes.
     justifyContent: 'center',
     alignItems: 'center',
   },

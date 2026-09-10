@@ -1,8 +1,4 @@
-/**
- * Tokens de diseño de la app. Ninguna pantalla define colores sueltos:
- * todo sale de acá para mantener una identidad visual consistente.
- * Paleta inspirada en la cancha: verde césped + amarillo tarjeta.
- */
+
 export const colores = {
   fondo: '#F2F6F1',
   superficie: '#FFFFFF',

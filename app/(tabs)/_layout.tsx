@@ -3,12 +3,10 @@ import { StyleSheet, Text } from 'react-native';
 
 import { colores } from '../../src/tema/colores';
 
-/** Ícono de tab: emoji, para no depender de una librería de íconos. */
 function IconoTab({ emoji, focused }: { emoji: string; focused: boolean }) {
   return <Text style={[estilos.icono, !focused && estilos.iconoInactivo]}>{emoji}</Text>;
 }
 
-/** Menú de navegación inferior con las tres pantallas del template. */
 export default function LayoutTabs() {
   return (
     <Tabs
@@ -26,6 +24,13 @@ export default function LayoutTabs() {
         sceneStyle: { backgroundColor: colores.fondo },
       }}
     >
+      <Tabs.Screen
+        name="galeria"
+        options={{
+          title: 'Galería',
+          tabBarIcon: ({ focused }) => <IconoTab emoji="🛍️" focused={focused} />,
+        }}
+      />
       <Tabs.Screen
         name="contador"
         options={{

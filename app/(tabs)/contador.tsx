@@ -3,10 +3,7 @@ import { Pressable, StyleSheet, Text, View } from 'react-native';
 
 import { colores, espaciado, radios } from '../../src/tema/colores';
 
-/**
- * Tarea 2 — Pantalla Contador.
- * Muestra un número en pantalla y un botón que lo incrementa con useState.
- */
+
 export default function PantallaContador() {
   const [goles, setGoles] = useState(0);
 

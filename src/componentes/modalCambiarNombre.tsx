@@ -10,11 +10,7 @@ type PropsModalCambiarNombre = {
   onCerrar: () => void;
 };
 
-/**
- * Tarea 2 — Modal de la pantalla Perfil.
- * Tiene un TextInput para el nombre y apellido nuevos y un botón "Guardar"
- * que cierra el modal y avisa al padre para que actualice la pantalla.
- */
+
 export default function ModalCambiarNombre({
   visible,
   nombreActual,
@@ -23,7 +19,6 @@ export default function ModalCambiarNombre({
 }: PropsModalCambiarNombre) {
   const [texto, setTexto] = useState(nombreActual);
 
-  // Cada vez que se abre el modal arranca con el nombre que se ve en pantalla.
   useEffect(() => {
     if (visible) {
       setTexto(nombreActual);

@@ -4,10 +4,7 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 import { colores } from '../src/tema/colores';
 
-/**
- * Layout raíz de expo-router: un Stack que contiene al grupo de Tabs.
- * Todo lo que se agregue como pantalla suelta en app/ se apila sobre las tabs.
- */
+
 export default function LayoutRaiz() {
   return (
     <SafeAreaProvider>

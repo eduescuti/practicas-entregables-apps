@@ -6,11 +6,7 @@ import { colores, espaciado, radios } from '../../src/tema/colores';
 
 const NOMBRE_POR_DEFECTO = 'Eduardo Escuti';
 
-/**
- * Tarea 2 — Pantalla Perfil.
- * Muestra un nombre y apellido por defecto y lo actualiza con lo que se
- * escriba en el Modal al tocar "Guardar".
- */
+
 export default function PantallaPerfil() {
   const [nombre, setNombre] = useState(NOMBRE_POR_DEFECTO);
   const [modalVisible, setModalVisible] = useState(false);

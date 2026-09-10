@@ -1,11 +1,10 @@
-/** Un partido de la lista de la pantalla Tarjetas. */
+
 export type Partido = {
   id: string;
   titulo: string;
   detalle: string;
 };
 
-/** Datos de relleno del template. En una app real vendrían de un servicio. */
 export const partidos: Partido[] = [
   {
     id: 'p1',

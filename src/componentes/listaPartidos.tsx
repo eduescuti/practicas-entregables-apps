@@ -4,10 +4,7 @@ import { partidos } from '../datos/partidos';
 import { colores, espaciado } from '../tema/colores';
 import TarjetaPartido from './tarjetaPartido';
 
-/**
- * Tarea 1 — Lista de tarjetas.
- * Recorre los partidos y le pasa a cada TarjetaPartido su contenido por props.
- */
+
 export default function ListaPartidos() {
   return (
     <View>
